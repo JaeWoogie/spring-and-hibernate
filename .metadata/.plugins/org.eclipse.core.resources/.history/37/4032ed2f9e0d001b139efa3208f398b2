@@ -1,0 +1,9 @@
+info.app.name=Jae spring boot for fun
+info.app.description=App to start with spring boot !!
+info.app.version=1.0.0
+
+#Use wild card to expose all endpoint
+management.endpoints.web.exposure.include=*
+
+#exclude individual endpoints
+management.endpoints.web.exposure.exclude=health,info

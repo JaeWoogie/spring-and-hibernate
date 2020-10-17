@@ -1,0 +1,24 @@
+package com.spring.fun;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+
+@Configuration
+@ComponentScan("com.spring.fun")
+public class SportConfig {
+	
+	//define beans for sad fortune service
+	@Bean
+	public FortuneService sadFortuneService() {
+		return new SadFortuneService();
+	}
+	
+	//define beans for swim coach and inject the bean
+	@Bean
+	public Coach swimCoach() {
+		return new SwimCoach(sadFortuneService());
+	}
+
+}

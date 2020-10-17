@@ -1,0 +1,5 @@
+package com.spring.rest;
+
+public class StudentRestExceptionHandler {
+
+}

@@ -1,0 +1,24 @@
+package com.spring.jackson.json.demo;
+
+public class Driver {
+
+	public static void main(String[] args) {
+		
+		try {
+			
+			//create object mapper
+			
+			
+			//read json file and convert to POJO
+			
+			
+			//print first and last name from the file
+			
+			
+		} catch(Exception exc) {
+			exc.printStackTrace();
+		}
+
+	}
+
+}

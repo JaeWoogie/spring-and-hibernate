@@ -1,0 +1,11 @@
+package com.spring.fun;
+
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+
+@Configuration
+@ComponentScan("com.spring.fun")
+public class SportConfig {
+
+}

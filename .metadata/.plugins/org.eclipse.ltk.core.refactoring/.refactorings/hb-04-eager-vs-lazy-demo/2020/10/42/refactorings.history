@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;GetInstructorCoursesDemo.java&apos; to &apos;com.hibernate.fun.demo.DeleteDemo.java&apos;&#x0A;- Original project: &apos;hb-04-eager-vs-lazy-demo&apos;&#x0A;- Destination element: &apos;com.hibernate.fun.demo.DeleteDemo.java&apos;&#x0A;- Original element: &apos;com.hibernate.fun.demo.GetInstructorCoursesDemo.java&apos;" description="Copy compilation unit" destination="/src&lt;com.hibernate.fun.demo{DeleteDemo.java" element1="/src&lt;com.hibernate.fun.demo{GetInstructorCoursesDemo.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1602786196912" units="1" version="1.0"/>
+</session>

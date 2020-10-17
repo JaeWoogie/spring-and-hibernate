@@ -1,0 +1,5 @@
+package com.springboot.fun.rest;
+
+public class EmployeeRestController {
+
+}

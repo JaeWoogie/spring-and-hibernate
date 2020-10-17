@@ -1,0 +1,27 @@
+package com.hibernate.fun.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="review")
+public class Review {
+
+	@Id
+	@Column(name="")
+	private int id;
+	
+	private String comment;
+
+	public Review() {
+		
+	}
+	
+	public Review(String comment) {
+		this.comment = comment;
+	}
+	
+	
+	
+}

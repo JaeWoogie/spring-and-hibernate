@@ -1,0 +1,21 @@
+package com.spring.fun;
+
+public class SwimCoach implements Coach {
+
+	private FortuneService fortuneService;
+	
+	public SwimCoach(FortuneService theFortuneService) {
+		fortuneService = theFortuneService;
+	}
+	
+	@Override
+	public String getDailyworkout() {
+		return "Swim 1000m for warm up";
+	}
+
+	@Override
+	public String getDailyFortune() {
+		return null;
+	}
+
+}

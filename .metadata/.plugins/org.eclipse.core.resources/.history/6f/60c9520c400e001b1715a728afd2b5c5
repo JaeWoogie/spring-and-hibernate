@@ -1,0 +1,46 @@
+package com.springboot.fun.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.springboot.fun.entity.Employee;
+
+@Repository
+public class EmployeeDAOJpaImpl implements EmployeeDAO{
+
+	private EntityManager entityManager;
+	
+	@Autowired
+	public EmployeeDAOJpaImpl(EntityManager theEntityManager) {
+		entityManager = theEntityManager;
+	}
+	
+	@Override
+	public List<Employee> findAll() {
+
+		return null;
+	}
+
+	@Override
+	public Employee findById(int theId) {
+
+		return null;
+	}
+
+	@Override
+	public void save(Employee theEmployee) {
+
+		
+	}
+
+	@Override
+	public void delete(int theId) {
+
+		
+	}
+
+}

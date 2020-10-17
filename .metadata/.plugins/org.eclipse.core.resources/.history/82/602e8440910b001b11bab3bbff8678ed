@@ -1,0 +1,48 @@
+package com.hibernate.fun.demo;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import com.hibernate.fun.entity.Student;
+
+public class UpdateStudentDemo {
+	
+	
+	
+	public static void main(String[] args) {
+		
+		//create session factory
+		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml")
+								.addAnnotatedClass(Student.class).buildSessionFactory();
+		
+		//create session
+		Session session = factory.getCurrentSession();
+		
+		try {
+			int studentId = 1;
+			
+			
+			session = factory.getCurrentSession();
+			session.beginTransaction();
+			
+			System.out.println("\nGetting student id with " + studentId);
+			
+			Student myStudent = session.get(Student.class, studentId);
+			
+			System.out.println("Updating a student...");
+			myStudent.setFirstName("Damn JoeJoe");
+			
+			session = factory.getCurrentSession();
+			session.beginTransaction();
+			
+			
+			
+			
+			session.getTransaction().commit();
+			
+		} finally {
+			factory.close();
+		}
+	}
+}

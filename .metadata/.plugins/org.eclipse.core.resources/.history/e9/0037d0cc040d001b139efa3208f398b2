@@ -1,0 +1,38 @@
+package com.spring.rest;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.spring.entity.Student;
+
+@RestController
+@RequestMapping("/api")
+public class StudentRestController {
+	
+	private List<Student> theStudents;
+	
+	@PostConstruct
+	public void loadData() {
+		
+		theStudents.add(new Student("eva", "lefever"));
+		theStudents.add(new Student("jae", "Lee"));
+		theStudents.add(new Student("lisa", "lefever"));
+	}
+
+	//define endpoint for "/student"
+	@GetMapping("/students")
+	public List<Student> getStudents() {
+		
+		return theStudents;
+	}
+	
+	//define 
+
+	
+}

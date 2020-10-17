@@ -1,0 +1,5 @@
+package com.springboot.fun.dao;
+
+public class EmployeeDAOJpaImpl implements EmployeeDAO{
+
+}

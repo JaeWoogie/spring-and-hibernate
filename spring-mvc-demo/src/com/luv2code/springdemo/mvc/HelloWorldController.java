@@ -1,0 +1,61 @@
+package com.luv2code.springdemo.mvc;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+@Controller
+@RequestMapping("/hello")
+public class HelloWorldController {
+
+	//controller method to show initial form
+	@RequestMapping("/showForm")
+	public String showForm() {
+		return "helloworld-form";
+	}
+	
+	//controller method to process the form
+	@RequestMapping("/processForm")
+	public String processForm() {
+		return "helloworld";
+	}
+	
+	//new controller method to read form data
+	@RequestMapping("/processFormTwo")
+	public String letsShout(HttpServletRequest request, Model model) {
+	
+		//read request from the html form
+		String theName = request.getParameter("studentName");
+		
+		//convert data to uppercase
+		theName = theName.toUpperCase();
+		
+		//add message to model
+		String result = "YO " + theName;
+		
+		model.addAttribute("message", result);
+		
+		return "helloworld";
+	}
+	
+	//controller method to show initial form
+		
+		//new controller method to read form data
+		@RequestMapping("/processFormThree")
+		public String processFormThree(@RequestParam("studentName") String theName, Model model) {
+			
+			//convert data to uppercase
+			theName = theName.toUpperCase();
+			
+			//add message to model
+			String result = "Hey my friend in V3! " + theName;
+			
+			model.addAttribute("message", result);
+			
+			return "helloworld";
+		}
+	
+}

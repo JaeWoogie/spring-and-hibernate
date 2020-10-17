@@ -1,0 +1,5 @@
+package com.springboot.fun.entity;
+
+public class Employee {
+
+}

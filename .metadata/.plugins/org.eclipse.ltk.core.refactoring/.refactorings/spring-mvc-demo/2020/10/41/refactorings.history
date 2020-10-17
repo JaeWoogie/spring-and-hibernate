@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.spring.fun.mvc&apos; to &apos;com.luv2code.springdemo.mvc&apos;&#x0A;- Original project: &apos;spring-mvc-demo&apos;&#x0A;- Original element: &apos;spring-mvc-demo/src/com.spring.fun.mvc&apos;&#x0A;- Renamed element: &apos;spring-mvc-demo/src/com.luv2code.springdemo.mvc&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.spring.fun.mvc&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.spring.fun.mvc" name="com.luv2code.springdemo.mvc" qualified="false" references="true" stamp="1602295863953" textual="false" version="1.0"/>
+</session>
